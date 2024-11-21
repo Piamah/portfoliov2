@@ -8,5 +8,24 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  siteMetadata: {
+    title: "Athénaïs Lecomte",
+    description: "Le portfolio d\'Athénaïs Lecomte, développeur web",
+    author: "@athenais.lcte",
+    language: "fr",
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+  ],
+
 }

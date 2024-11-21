@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    font-family: 'Anuphan', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-text: #006aff; //Couleur du txt par défaut
+    --color-background: #F1F0EE; //BG site
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+body.dark {
+    --color-text: #ffffff; //Color txt
+    --color-background: #171717; //BG Dark 
+    --image: url("../assets/sun.svg");
+}
+
+body.light {
+    --image: url("../assets/moon.svg");
+}

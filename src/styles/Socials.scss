@@ -1,0 +1,31 @@
+.vertical-bar {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 3;
+}
+
+.vertical-bar::before {
+    content: '';
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    width: 1px;
+    height: calc(100vh - 80px);
+    background-color: #333;
+}
+
+.icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    color: #0077b5;
+    transform: scale(1.2);
+}
