@@ -5,7 +5,7 @@ import darkImage from "../assets/night_version.webp";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Banner = () => {
-    const { isDark } = useContext(ThemeContext);
+    const { isDark } = useContext(ThemeContext) || { isDark: false };
 
     const currentImage = isDark ? darkImage : lightImage;
 

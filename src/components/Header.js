@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
     const { t } = useTranslation();
-    const { isDark, toggleTheme } = useContext(ThemeContext);
+    const { isDark, toggleTheme } = useContext(ThemeContext) || { isDark: false, toggleTheme: () => { } };
 
     const logo = isDark ? logodark : logolight;
 
