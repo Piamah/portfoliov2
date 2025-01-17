@@ -5,12 +5,18 @@ i18n.use(initReactI18next).init({
     resources: {
         en: {
             translation: {
-                about: "Hello"
+                about: "About me",
+                skills: "My skills",
+                project: "My projects",
+                contact: "Contact"
             }
         },
         fr: {
             translation: {
-                welcome: "Bienvenue sur mon app"
+                about: "A propos",
+                skills: "Compétences",
+                project: "Projets",
+                contact: "Contact"
             }
         }
     },

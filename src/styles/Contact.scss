@@ -15,9 +15,10 @@
     }
 
     a {
-        color: rgb(177 119 119);
-        background-color: #e7e0dc;
-        border: 1px solid rgb(213 185 185);
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 10px rgb(0, 0, 0);
+        background-color: var(--color-cards-bg);
+        border: 1px solid #f3f3f3;
         border-radius: 3px;
         padding: 1.25rem 1.75rem;
         font-size: 19px;

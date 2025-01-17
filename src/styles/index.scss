@@ -11,9 +11,18 @@ html {
 }
 
 :root {
-    --color-text: #006aff; //Couleur du txt par défaut
-    --color-background: #F1F0EE; //BG site
+    --color-text: #000000;
+    --color-background: #f3f3f3;
+    --color-header-bg: #fff;
+    --color-header-text: #051331;
+    --color-icon: #d7550f;
+    --color-icon-hover: #f3a27a;
+    --color-skills-minor: #ee8f61;
+    --color-skills-major: #f8b594;
+    --color-cards-bg: #ddd1ca;
+
 }
+
 
 body {
     color: var(--color-text);
@@ -21,8 +30,15 @@ body {
 }
 
 body.dark {
-    --color-text: #ffffff; //Color txt
-    --color-background: #171717; //BG Dark 
+    --color-text: #ffffff;
+    --color-background: #282828;
+    --color-header-bg: #121212;
+    --color-header-text: #ffffff;
+    --color-icon: #00ceff;
+    --color-icon-hover: #218ba9;
+    --color-skills-minor: #3f99a3;
+    --color-skills-major: #107087;
+    --color-cards-bg: #00717b;
     --image: url("../assets/sun.svg");
 }
 

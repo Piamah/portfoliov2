@@ -12,20 +12,27 @@
 .vertical-bar::before {
     content: '';
     position: absolute;
-    top: 135px;
+    top: 170px;
     left: 50%;
     width: 1px;
     height: calc(100vh - 80px);
-    background-color: #333;
+    background-color: var(--color-icon);
 }
 
 .icon {
     font-size: 24px;
-    color: #333;
+    color: var(--color-icon);
     transition: color 0.3s, transform 0.3s;
 }
 
 .icon:hover {
-    color: #0077b5;
+    color: var(--color-icon-hover);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+    .vertical-bar {
+        display: none;
+    }
+
 }

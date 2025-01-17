@@ -2,21 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
     padding: 0px 50px 0px 0px;
+    border-bottom: 1px solid #ccc;
 
-    a {
-        color: black;
+    nav a {
+        color: var(--color-header-text);
         text-decoration: none;
     }
 
     a:hover {
-        color: #AA7B39;
+        color: var(--color-icon-hover);
     }
 
-    a:focus {
-        color: #AA7B39
-    }
 
     img {
         margin: 20px;
@@ -40,33 +39,105 @@
         text-align: right;
         text-decoration-line: none;
     }
+
+    .visually-hidden {
+        color: var(--color-text)
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch .checkbox {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-skills-minor);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "☀️";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    /* Mode sombre */
+    .switch .checkbox.dark+.slider {
+        background-color: #00717b;
+    }
+
+    .switch .checkbox.dark+.slider:before {
+        transform: translateX(26px);
+        content: "🌙";
+    }
+
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
 }
 
+/* Tablettes en mode portrait til 1024px*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        padding: 0px;
 
-// @media (max-width: 767.98px) {
-//     .header {
-//         margin: 25px;
+        ul {
+            padding: 0px;
+            gap: 30px;
+        }
 
-//         a {
-//             text-transform: uppercase;
-//         }
+        img {
+            width: 50%;
+        }
 
-//         ul {
-//             gap: 25px;
-//         }
-
-//         .nav {
-//             font-family: Montserrat;
-//             font-size: 12px;
-//             font-weight: 500;
-//             line-height: 17.11px;
-//             text-align: right;
-//         }
-
-//         .logo {
-//             width: 40%;
-//         }
-//     }
+        nav {
+            font-size: 20px;
+        }
 
 
-// }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    //Faire menu hamburger
+}

@@ -8,7 +8,7 @@ const Card = ({ title, image, link }) => {
             <a href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Voir détails sur ${title}`}
+                  aria-label={`See more details about ${title}`}
                   className="card-link">
                   <article className="card">
                         {image ? (

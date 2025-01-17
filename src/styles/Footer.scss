@@ -6,24 +6,26 @@
     font-family: 'Anuphan', Arial sans-serif;
     font-size: 15px;
     text-align: center;
-    background-color: #e7e0dc;
+    background-color: var(--color-header-bg);
+    border-top: 1px solid #ccc;
 
 
     p {
-        color: rgb(78, 70, 70);
+        color: var(--color-header-text);
         margin: 10px;
     }
 
     a {
         text-decoration: none;
-        color: rgb(78, 70, 70);
+        color: var(--color-header-text);
     }
 
     a:hover {
-        color: rgb(181 81 81)
+        color: var(--color-icon-hover)
     }
 
     .go-up {
+        color: var(--color-icon-hover);
         margin: 10px;
         font-size: 30px;
         cursor: pointer;

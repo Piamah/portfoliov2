@@ -8,8 +8,8 @@ const Footer = () => {
         <footer className="footer">
             <p>© 2024 Athénaïs Lecomte - Tous droits réservés.</p>
             <p>Inspiré par le site de <a href="https://brittanychiang.com/#about">Brittany Chiang</a></p>
-            <a href="#header-section">
-                <BsFillRocketFill className='go-up' />
+            <a href="#header-section" className='go-up' aria-label='Return to the top'>
+                <BsFillRocketFill />
             </a>
         </footer>
     );

@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.1.6",
     "gatsby": "^5.14.0",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-image": "^3.14.0",

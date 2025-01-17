@@ -1,16 +1,37 @@
+.skillsContent {
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 90px 90px 90px;
+}
+
 .graphSkills {
     width: 100%;
     max-width: 400px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background: conic-gradient(#ebd4c7 0% 35%,
-            #f0eae3 35% 100%,
+    background: conic-gradient(var(--color-skills-minor) 0% 35%,
+            var(--color-skills-major) 35% 100%,
         );
     margin: 0px 20px 0px 0px;
 }
 
-.skillsContent {
-    display: flex;
-    justify-content: space-around;
-    margin: 90px 30px 90px 30px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .graphSkills {
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .skillsContent {
+        margin: 20px;
+
+    }
+
+    .graphSkills {
+        width: 25%;
+        aspect-ratio: 1 / 1;
+
+    }
 }

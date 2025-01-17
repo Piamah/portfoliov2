@@ -8,7 +8,6 @@ import Skills from '../components/Skills';
 import Cards from '../components/Cards';
 import Contact from '../components/Contact';
 import Socials from '../components/Socials';
-import Toggle from '../components/Toggle.js';
 import { ThemeProvider } from "../context/ThemeContext.js";
 import { Helmet } from "react-helmet";
 import '../multiLang'
@@ -25,7 +24,6 @@ export default function Home() {
 
         <section id="header-section">
           <Header />
-          <Toggle />
         </section>
         <section id="about-section">
           <Banner />
@@ -44,7 +42,7 @@ export default function Home() {
         </section>
         <Socials />
         <Footer />
-      </ThemeProvider>,
+      </ThemeProvider>
     </div>
   );
 }
