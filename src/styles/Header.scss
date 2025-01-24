@@ -69,7 +69,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--color-skills-minor);
+        background-color: var(--color-skills-major);
         -webkit-transition: .4s;
         transition: .4s;
     }
@@ -135,6 +135,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
     body {
         font-size: 12px;
     }

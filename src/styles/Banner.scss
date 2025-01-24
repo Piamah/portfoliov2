@@ -4,12 +4,17 @@
     justify-content: center;
     max-width: 100%;
     height: auto;
-    padding: 40px 90px;
-    margin: 40px 90px 40px 90px;
+    padding: 10px 90px;
+    margin: 10px 90px 40px 90px;
+
+    span {
+        display: flex;
+    }
 }
 
+
 .banner img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     object-fit: contain;
 }
