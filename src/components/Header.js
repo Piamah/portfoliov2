@@ -3,12 +3,14 @@ import { Link } from 'gatsby';
 import { ThemeContext } from '../context/ThemeContext';
 import logolight from '../assets/websites_logo.webp';
 import logodark from '../assets/websites_logo_darktheme.webp';
+import Switch from '../components/Switch'
+import Hamburger from '../components/Hamburger';
 import '../styles/Header.scss';
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
     const { t } = useTranslation();
-    const { isDark, toggleTheme } = useContext(ThemeContext) || { isDark: false, toggleTheme: () => { } };
+    const { isDark } = useContext(ThemeContext) || { isDark: false, toggleTheme: () => { } };
 
     const logo = isDark ? logodark : logolight;
 
@@ -17,7 +19,7 @@ const Header = () => {
             <a href='https://github.com/Piamah' target="_blank" rel="noreferrer" >
                 <img className='logo' src={logo} alt='Athénaïs Logo'></img>
             </a>
-            <nav>
+            <nav className="desk-nav">
                 <ul>
                     <li>
                         <Link to="#about-section">{t('about')}</Link>
@@ -33,19 +35,8 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            {/*Bouton dark/light */}
-            <div className="switch">
-                <button
-                    onClick={toggleTheme}
-                    className={`checkbox ${isDark ? 'dark' : 'light'}`}
-                    aria-label={`Activer le mode ${isDark ? 'light' : 'dark'}`}
-                >
-                    <span className="visually-hidden">
-                        {`Activer le mode ${isDark ? 'light' : 'dark'}`}
-                    </span>
-                </button>
-                <span className="slider round"></span>
-            </div>
+            <Hamburger />
+            <Switch />
         </header>
     );
 };

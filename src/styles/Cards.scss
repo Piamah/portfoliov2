@@ -27,11 +27,10 @@
   .card-list {
     display: flex;
     flex-direction: column;
-    width: 50%;
     background-color: var(--color-cards-bg);
     border-radius: 25px;
     gap: 25px;
-    margin: 20px;
+    margin: 72px;
     padding: 20px;
 
     .card {
@@ -45,6 +44,7 @@
       transition: transform 0.3s ease;
 
     }
+
   }
 
 
