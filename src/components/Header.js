@@ -35,8 +35,10 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <Hamburger />
-            <Switch />
+            <div className="menu-content">
+                <Hamburger />
+                <Switch />
+            </div>
         </header>
     );
 };

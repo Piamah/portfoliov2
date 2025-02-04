@@ -40,7 +40,9 @@ export default function Home() {
           <Separator text="Contact" />
           <Contact />
         </section>
-        <Socials />
+        <section id="social-section">
+          <Socials />
+        </section>
         <Footer />
       </ThemeProvider>
     </div>

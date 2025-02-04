@@ -46,3 +46,15 @@ body.dark {
 body.light {
     --image: url("../assets/moon.svg");
 }
+
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    #social-section {
+        display: none;
+    }
+
+}

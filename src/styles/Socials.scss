@@ -31,8 +31,33 @@
 }
 
 @media screen and (max-width: 767px) {
-    .vertical-bar {
-        display: none;
+
+    .hamburger-menu {
+        .vertical-bar {
+            padding: 0px 0px 90px 0px;
+        }
     }
 
+    .vertical-bar {
+        position: static;
+        transform: translateY(100%);
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        z-index: 3;
+        margin: 0px 0px 80px 20px;
+    }
+
+    .vertical-bar::before {
+        content: none;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .icon:hover {
+        color: var(--color-icon);
+        transform: none;
+    }
 }

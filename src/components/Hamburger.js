@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
+import Socials from '../components/Socials.js'
 import { Link } from 'gatsby';
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoCloseOutline } from "react-icons/io5";
+import { CgClose } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import '../styles/Hamburger.scss';
 
@@ -44,10 +45,24 @@ const HamburgerMenu = () => {
         };
     }, []);
 
+    //Scroll bar sur menu
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden"; // Empêche le scroll du body
+        } else {
+            document.body.style.overflow = ""; // Réactive le scroll du body
+        }
+
+        return () => {
+            document.body.style.overflow = ""; // Nettoyage
+        };
+    }, [isMenuOpen]);
+
     return (
         <div className="hamburger">
             <div className="menu" onClick={toggleMenu}>
-                {isMenuOpen ? <IoCloseOutline className="close-menu" /> : <GiHamburgerMenu className="icon-menu" />}
+                {isMenuOpen ? <CgClose className="close-menu" /> : <GiHamburgerMenu className="icon-menu" />}
             </div>
 
             <nav ref={menuRef} className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
@@ -57,6 +72,7 @@ const HamburgerMenu = () => {
                     <li><Link to="#project-section" onClick={toggleMenu}>{t('project')}</Link></li>
                     <li><Link to="#contact-section" onClick={toggleMenu}>{t('contact')}</Link></li>
                 </ul>
+                <Socials />
             </nav>
         </div>
     );
