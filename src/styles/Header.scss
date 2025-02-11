@@ -21,9 +21,15 @@
     }
 
 
-    img {
+    .gatsby-image-wrapper.logo {
         margin: 20px;
-        width: 65%;
+        width: 70px;
+        height: 85px;
+    }
+
+    img {
+        width: 70px;
+        height: 85px;
     }
 
 
@@ -47,6 +53,11 @@
     .visually-hidden {
         color: var(--color-text)
     }
+
+    .logo-header {
+        width: 70px;
+        height: 115px;
+    }
 }
 
 /* Tablettes en mode portrait til 1024px*/
@@ -57,10 +68,6 @@
         ul {
             padding: 0px;
             gap: 30px;
-        }
-
-        img {
-            width: 50%;
         }
 
         nav {
@@ -77,10 +84,6 @@
     }
 
     .header {
-
-        img {
-            width: 30%;
-        }
 
         ul {
             display: flex;

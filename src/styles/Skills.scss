@@ -5,6 +5,9 @@
 }
 
 .graphSkills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     max-width: 400px;
     aspect-ratio: 1 / 1;
@@ -13,12 +16,16 @@
             var(--color-skills-major) 35% 100%,
         );
     margin: 0px 20px 0px 0px;
+
+    p {
+        color: white;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .graphSkills {
         width: 50%;
-
+        margin: 0px 33px 0px 33px;
     }
 }
 
@@ -30,9 +37,9 @@
     }
 
     .graphSkills {
-        width: 45%;
+        width: 55%;
         aspect-ratio: 1 / 1;
-
+        margin: 0px;
     }
 
     .codeContent,

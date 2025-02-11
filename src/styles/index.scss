@@ -12,14 +12,14 @@ html {
 
 :root {
     --color-text: #000000;
-    --color-background: #f3f3f3;
-    --color-header-bg: #fff;
+    --color-background: #F7F4F3;
+    --color-header-bg: #ffffff;
     --color-header-text: #051331;
-    --color-icon: #bb2626;
-    --color-icon-hover: #ff0000;
-    --color-skills-minor: #5e1010;
-    --color-skills-major: #bb0808;
-    --color-cards-bg: #5a0000;
+    --color-icon: #5B2333;
+    --color-icon-hover: #862843;
+    --color-skills-minor: #5B2333;
+    --color-skills-major: #44232d;
+    --color-cards-bg: #5B2333;
     --color-menu-bg: #ebd9d9;
 }
 
@@ -45,6 +45,12 @@ body.dark {
 
 body.light {
     --image: url("../assets/moon.svg");
+}
+
+.gatsby-image-wrapper [data-main-image] {
+    opacity: 0;
+    transform: none;
+    transition: none;
 }
 
 

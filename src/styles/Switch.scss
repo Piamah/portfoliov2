@@ -26,6 +26,7 @@
     background-color: var(--color-skills-major);
     -webkit-transition: .4s;
     transition: .4s;
+    width: 55px;
 }
 
 .slider:before {
@@ -67,6 +68,10 @@
 
     .switch {
         z-index: 0;
+    }
+
+    .slider {
+        width: 44px;
     }
 
     .slider.round {

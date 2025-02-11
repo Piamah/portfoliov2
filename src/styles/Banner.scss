@@ -12,9 +12,9 @@
     }
 }
 
-
-.banner img {
+.banner .gatsby-image-wrapper {
     max-width: 80%;
+    width: 1024px;
     height: auto;
     object-fit: contain;
 }
