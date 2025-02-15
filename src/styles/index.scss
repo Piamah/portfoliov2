@@ -47,11 +47,11 @@ body.light {
     --image: url("../assets/moon.svg");
 }
 
-.gatsby-image-wrapper [data-main-image] {
-    opacity: 0;
-    transform: none;
-    transition: none;
-}
+// .gatsby-image-wrapper [data-main-image] {
+//     opacity: 0;
+//     transform: none;
+//     transition: none;
+// }
 
 
 @media screen and (max-width: 767px) {
