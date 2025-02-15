@@ -18,8 +18,9 @@ export default function Home() {
       <ThemeProvider>
         <Helmet>
           <html lang="fr" />
-          <title>Athénaïs Lecomte</title>
-          <meta name="description" content="Portfolio d'Athénaïs Lecomte', développeur web." />
+          <title>Athénaïs Lecomte - Portfolio</title>
+          <meta name="description" content="Portfolio d'Athénaïs Lecomte', développeur web : mes projets et mes compétences." />
+          <meta name='keywords' content='portfolio, athenais lecomte, développeur, projets, compétences' />
         </Helmet>
 
         <section id="header-section">
