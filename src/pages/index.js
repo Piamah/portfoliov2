@@ -18,7 +18,8 @@ export default function Home() {
       <ThemeProvider>
         <Helmet>
           <html lang="fr" />
-          <title>Athénaïs Lecomte - Portfolio</title>
+          <title>Athénaïs Lecomte  - Développeur Web - Portfolio</title>
+          <meta property="og:title" content="Athénaïs Lecomte - Développeur Web - Portfolio" />
           <meta name="description" content="Portfolio d'Athénaïs Lecomte', développeur web : mes projets et mes compétences." />
           <meta name='keywords' content='portfolio, athenais lecomte, développeur, projets, compétences' />
           <meta name="google-site-verification" content="II_LbYqDDZTEXdh4FzvYNuGS92gzsauEOEhB98kUb8E" />
