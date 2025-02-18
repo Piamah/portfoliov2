@@ -1,4 +1,5 @@
 import React from 'react';
+import { PiStudentFill } from "react-icons/pi";
 import '../styles/Skills.scss'
 
 
@@ -10,8 +11,8 @@ const Skills = () => {
                 <p>Node.js</p>
                 <p>Express.js</p>
                 <p>MongoDB</p>
-                <p>Django</p>
-                <p>GraphQL</p>
+                <p>Python ... <PiStudentFill /></p>
+                <p>MySQL ... <PiStudentFill /></p>
 
             </div>
             <div className='graphSkills'>
