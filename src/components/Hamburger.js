@@ -61,9 +61,9 @@ const HamburgerMenu = () => {
 
     return (
         <div className="hamburger">
-            <div className="menu" onClick={toggleMenu}>
+            <button className="menu" onClick={toggleMenu}>
                 {isMenuOpen ? <CgClose className="close-menu" /> : <GiHamburgerMenu className="icon-menu" />}
-            </div>
+            </button>
 
             <nav ref={menuRef} className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
                 <ul>
