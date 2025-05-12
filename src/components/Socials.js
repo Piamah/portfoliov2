@@ -6,8 +6,8 @@ const Socials = () => {
     return (
         <div className="vertical-bar">
             <a
-                href="/CV_AL_022025.pdf"
-                download="CV_AL_022025.pdf"
+                href="/CV_AL_042025.pdf"
+                download="CV_AL_042025.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label='Download my CV (will open a PDF document)'>
